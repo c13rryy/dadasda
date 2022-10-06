@@ -1,0 +1,17 @@
+@import 'header';
+
+@import 'footer';
+
+/* container-one  */
+
+.container-one {
+    margin-top: 50px;
+    h1{
+        font-weight: bold;
+        color: black;
+        font-size: 40px;
+        line-height: 105px;
+        text-transform: uppercase;
+        margin-bottom: 70px; 
+    }
+}

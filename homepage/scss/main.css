@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************/
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'IBM Plex Sans';
+}
+
+/* header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 1600px) {
+  .header {
+    width: 95%;
+  }
+}
+
+.header .logotype {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logotype .images {
+  width: 150px;
+  position: relative;
+  left: -32px;
+}
+
+.header .logotype .images img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header .logotype .logo-txt {
+  position: absolute;
+}
+
+.header .logotype .logo-txt .txt {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 105%;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  left: 88px;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 490px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header nav ul li {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.header nav ul li a:hover {
+  color: blue;
+}
+
+/* footer */
+footer {
+  background: #DCDCDC;
+  margin-top: 50px;
+}
+
+footer .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .all .images {
+  width: 150px;
+}
+
+footer .all .images img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .all .txt ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .all .txt ul li {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 105%;
+  text-transform: uppercase;
+}
+
+footer .all .txt ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+footer .all .txt ul li a:hover {
+  color: blue;
+}
+
+footer .all .txt ul .first {
+  padding-right: 20px;
+}
+
+/* cont-one */
+.container-one {
+  margin-top: 50px;
+}
+
+.container-one h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 105%;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.container-one .photos .information-of-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background: gray;
+}
+/*# sourceMappingURL=main.css.map */

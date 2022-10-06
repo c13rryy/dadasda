@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*************/
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body{
+    font-family: 'IBM Plex Sans';
+}
+
+
+
+
+/* header */
+
+
+@mixin onlylarge($w)
+{
+	@media only screen and (max-width:$w){
+		@content
+	}
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include onlylarge(1600px){
+      width: 95%;
+    }      
+    .logotype{
+        display: flex;
+        align-items: center;
+        .images{
+            width: 150px;
+            position: relative;
+            left: -32px;
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .logo-txt{
+            position: absolute;
+            .txt{
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 105%;
+                color: black;
+                text-transform: uppercase;
+                position: relative;
+                left: 88px;
+            }
+        }
+    }
+
+    nav{
+        ul{
+            display: flex;
+            width: 490px;
+            justify-content: space-between;
+            li{
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 105%;
+                text-transform: uppercase;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.8s;
+                    cursor: pointer; 
+                }
+
+                a:hover{
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+/* footer */
+
+
+footer{
+  background: #DCDCDC;
+  margin-top: 50px;
+ .all{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  .images{
+    width: 150px;
+    img{
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+  }
+
+  .txt{
+    ul{
+      display: flex;
+      li{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 105%;
+        text-transform: uppercase;
+        a{
+          text-decoration: none;
+          color: black;
+          transition: 0.8s;
+          cursor: pointer;
+        }
+
+         a:hover{
+                    color: blue;
+                }
+      }
+
+      .first{
+        padding-right: 20px;
+      }
+    }
+  }
+ }
+}
+
+
+/* cont-one */
+
+.container-one{
+  margin-top: 50px;
+  h1{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 105%;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+  }
+
+  .photos{
+    .information-of-product{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 700px;
+      background: gray;
+    }
+  }
+}
